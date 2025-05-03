@@ -4,39 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Soup District - Coming Soon - Wellington CBD</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f8f9fa;
-      color: #333;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #f9f9f9, #e2e8f0);
+      color: #2d3748;
       display: flex;
-      flex-direction: column;
       justify-content: center;
       align-items: center;
       height: 100vh;
       text-align: center;
     }
-    h1 {
-      font-size: 3rem;
-      margin-bottom: 0.5rem;
+
+    .container {
+      background: white;
+      padding: 2.5rem 2rem;
+      border-radius: 1.5rem;
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      max-width: 600px;
+      width: 90%;
+      animation: fadeIn 0.8s ease-in-out;
     }
-    p {
-      font-size: 1.2rem;
-      color: #666;
-    }
+
     .logo {
-      max-width: 150px;
-      margin-bottom: 2rem;
+      max-width: 120px;
+      margin-bottom: 1.5rem;
+    }
+
+    h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #1a202c;
+    }
+
+    p {
+      font-size: 1.1rem;
+      color: #4a5568;
+      line-height: 1.6;
+    }
+
+    .info {
+      margin-top: 2rem;
+      font-size: 0.95rem;
+      color: #718096;
+    }
+
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
 <body>
-  <!-- Optional logo -->
-  <!-- <img src="your-logo.png" alt="Your Logo" class="logo" /> -->
+  <div class="container">
+    <!-- Optional logo image -->
+    <!-- <img src="your-logo.png" alt="Soup District logo" class="logo"> -->
 
-  <h1>COMING SOON - Soup District - Wellington CBD</h1>
-  <p>Quick, easy, and packed with fresh flavor! Soup District's vegetarian and vegan soups, salads, and sandwiches are made in small batches with fresh, </p>
-  <p>high-quality ingredients for a delicious meal that fuels your day.</p>
+    <h1>COMING SOON – Soup District</h1>
+    <p>Quick, easy, and packed with fresh flavor!</p>
+    <p>Soup District's vegetarian and vegan soups, salads, and sandwiches are made in small batches with high-quality ingredients for a delicious meal that fuels your day.</p>
+
+    <div class="info">
+      <p><strong>Launching:</strong> May 2025</p>
+      <p><strong>Location:</strong> 110 Lambton Quay, Wellington CBD, NZ</p>
+    </div>
+  </div>
 </body>
 </html>
